@@ -18,4 +18,14 @@
 
 let myCreatedDate4 = new Date("10-30-2023")
 let myTimeStamp = Date.now()
-console.log(myTimeStamp); // 1698684964324 // millisecond value from 1st Jan 1970
+// console.log(myTimeStamp); // 1698684964324 // millisecond value from 1st Jan 1970
+// console.log(myCreatedDate4.getTime());
+// console.log(Math.floor(Date.now()/1000)); // now time in seconds
+
+let newDate = new Date()
+console.log(newDate); //2023-11-10T07:18:53.497Z
+console.log(newDate.getMonth()); //10 // as months strat from 0 so nov is 10
+//we can write it as...to recognise easily
+console.log(newDate.getMonth()+1);// 11
+console.log(newDate.toLocaleString('default',{weekday:"long"}));
+
