@@ -1,55 +1,55 @@
 
-// //Array is an object
-// //Arrays in Js are resizable and contain a mix of different datatypes
+//Array is an object
+//Arrays in Js are resizable and contain a mix of different datatypes
 
 
 const myArr =[0,1,2,3,4,5]
 
-// console.log(myArr.length);
+console.log(myArr.length);
 
 const arr2 = new Array(1,2,3,4)// another type of declaring
-// console.log(arr2[1]);//2
+console.log(arr2[1]);//2
 
-// //........Array methods..........
+//........Array methods..........
 
-// myArr.push(4)/*[
-//     0, 1, 2, 3,
-//     4, 5, 4
-//   ]*/
-// myArr.push(7)/*[
-//     0, 1, 2, 3,
-//     4, 5, 4, 7
-//   ]*///push method adds elements to the end of the array 
-// console.log(myArr);
+myArr.push(4)/*[
+    0, 1, 2, 3,
+    4, 5, 4
+  ]*/
+myArr.push(7)/*[
+    0, 1, 2, 3,
+    4, 5, 4, 7
+  ]*///push method adds elements to the end of the array 
+console.log(myArr);
 
-// myArr.pop()
-// console.log(myArr);/*[
-//     0, 1, 2, 3,
-//     4, 5, 4
-//   ]
-// */ // deletes last element from the array
+myArr.pop()
+console.log(myArr);/*[
+    0, 1, 2, 3,
+    4, 5, 4
+  ]
+*/ // deletes last element from the array
 
-// myArr.unshift(1)
-// console.log(myArr);/*[
-//     1, 0, 1, 2,
-//     3, 4, 5, 4
-//   ]*/ // Adds vlaues to start of the array
-// myArr.shift() // deletes value from the start of the array
-// console.log(myArr);
+myArr.unshift(1)
+console.log(myArr);/*[
+    1, 0, 1, 2,
+    3, 4, 5, 4
+  ]*/ // Adds vlaues to start of the array
+myArr.shift() // deletes value from the start of the array
+console.log(myArr);
 
-// console.log(myArr.includes(9));//false (boolean) if 9 is present in array
-// console.log(myArr.indexOf(3)); // 3
+console.log(myArr.includes(9));//false (boolean) if 9 is present in array
+console.log(myArr.indexOf(3)); // 3
 
-// const newArr = myArr.join()
-// console.log(myArr);/*[
-//   0, 1, 2, 3,
-//   4, 5, 4
-// ]*/
-// console.log(newArr);//0,1,2,3,4,5,4
-// console.log(typeof myArr); // object
-// console.log(typeof newArr);//string
+const newArr = myArr.join()
+console.log(myArr);/*[
+  0, 1, 2, 3,
+  4, 5, 4
+]*/
+console.log(newArr);//0,1,2,3,4,5,4
+console.log(typeof myArr); // object
+console.log(typeof newArr);//string
 
-// // slice, splice
+// slice, splice
 
 console.log("A : ", myArr);
 
