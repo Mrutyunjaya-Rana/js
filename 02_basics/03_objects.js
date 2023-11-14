@@ -6,7 +6,7 @@
 //singleton -> when an constructor is created it is a singleton object
 
 //declaring a symbol
-const mySym = Symbol("key1")
+ const mySym = Symbol("key1")
 
 
 // object
@@ -73,4 +73,17 @@ Object.freeze(jsUser2)
 jsUser2.email = "muku01@gmail.com"
 console.log(jsUser2["email"]);//mukumuku@gmail.com
 
+
+jsUser2.greeting = function(){
+  console.log("Hello Js user");
+}
+jsUser2.greetingTwo = function(){
+  console.log(`Hello Js user, ${this.name}`);//when u have to reference the same object u can use 'this'
+}
+
+//console.log(jsUser2.greeting);//[Function (anonymous)]//here function is not executed only the reference of the function is returned back
+console.log(jsUser2.greeting());//Hello Js user
+                                //undefined
+console.log(jsUser2.greetingTwo());//Hello Js user, muku
+                                   //undefined
 
