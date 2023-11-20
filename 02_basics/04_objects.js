@@ -1,12 +1,12 @@
 
-// //declaring object
-// //singleton
-// const tinderUser1 = new Object()//{}
-// console.log(tinderUser1);
+//declaring object
+//singleton
+const tinderUser1 = new Object()//{}
+console.log(tinderUser1);
 
-// //non singleton
-// const tinderUser2 = {}
-// console.log(tinderUser2);//{}
+//non singleton
+const tinderUser2 = {}
+console.log(tinderUser2);//{}
 
 const tinderUser = {}
 
@@ -14,7 +14,7 @@ tinderUser.id = "123bmnb"
 tinderUser.name = "muku"
 tinderUser.isLoggedIn = false
 
-//console.log(tinderUser);//{ id: '123bmnb', name: 'muku', isLoggedIn: false }
+console.log(tinderUser);//{ id: '123bmnb', name: 'muku', isLoggedIn: false }
 
 const regularUser = {
     email : "some@gmail.com",
@@ -27,15 +27,15 @@ const regularUser = {
 
 }
 
-// console.log(regularUser.email);//some@gmail.com
-// console.log(regularUser.fullName.userFullName.firstName);//muku
+console.log(regularUser.email);//some@gmail.com
+console.log(regularUser.fullName.userFullName.firstName);//muku
 
 //combining objects
 const obj1 = {1 : "a", 2 : "b"}
 const obj2 = {3 : "a", 4 : "b"}
 
-// const obj3 = {obj1, obj2}
-// console.log(obj3);//{ obj1: { '1': 'a', '2': 'b' }, obj2: { '3': 'a', '4': 'b' } }
+const obj3 = {obj1, obj2}
+console.log(obj3);//{ obj1: { '1': 'a', '2': 'b' }, obj2: { '3': 'a', '4': 'b' } }
 
 const obj4 = Object.assign(obj1, obj2) //obj2 is assigned to obj1
 const obj5 = Object.assign({},obj1,obj2)//both obj1 and obj2 are assined to empty object//this is used in industry level code
