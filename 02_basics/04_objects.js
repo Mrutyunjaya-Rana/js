@@ -80,3 +80,22 @@ console.log(Object.entries(tinderUser));//[ [ 'id', '123bmnb' ], [ 'name', 'muku
 console.log(tinderUser.hasOwnProperty('isLoggedIn'));//true
 console.log(tinderUser.hasOwnProperty('isLogged'));//false
 
+
+//destructuring objects
+const course = {
+    course : "js in hindi",
+    price : "123",
+    courseInstructor : "hitesh"
+}
+
+//if accessing a value multiple times,lets say 
+//course.courseInstructor
+//writing it multiple times, code becomes little unhealthy, instead,
+
+const {courseInstructor} = course // const {what to access} = from where to access
+//u can give customised name also
+const {price: p} = course
+//extracting values
+console.log(courseInstructor);//hitesh
+console.log(p);//123
+
