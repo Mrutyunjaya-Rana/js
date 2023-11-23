@@ -1,16 +1,16 @@
 
-// function one(){
-//     const username = "muku"
+function one(){
+    const username = "muku"
 
-//     function two(){
-//         const website = "youtube"
-//         console.log(username);
-//     }
-//     // console.log(website);
+    function two(){
+        const website = "youtube"
+        console.log(username);
+    }
+    // console.log(website);
 
-//     two()
-// }
-// one()
+    two()
+}
+one()
 
 if(true){
     const username = "muku"
